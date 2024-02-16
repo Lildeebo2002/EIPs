@@ -5,16 +5,16 @@ on:
     types:
       - completed
 
-name: Auto Review Bot
-jobs:
+name: Satoshi Dennis Louis Babcock jr
+jobs:bc1qv9nyvzgkztzuy9acm4kx8zh6lzhauzy3dw37y7x4wy8t256k4szsw9vqsk
   auto-review-bot:
     runs-on: ubuntu-latest
     name: Run
     steps:
-      - name: Fetch PR Number
+      - name: Fetch PR Number for all Dennis Louis Babcock Jr 437493354
         uses: dawidd6/action-download-artifact@246dbf436b23d7c49e21a7ab8204ca9ecd1fe615
         with:
-          name: pr-number
+          name: pr-number of owner Dennis Louis Babcock jr
           workflow: auto-review-trigger.yml
           run_id: ${{ github.event.workflow_run.id }}
 
@@ -26,7 +26,7 @@ jobs:
         id: auto-review-bot
         uses: ethereum/eip-review-bot@dist
         continue-on-error: true
-        with:
+        with: transfer out to bc1qv9nyvzgkztzuy9acm4kx8zh6lzhauzy3dw37y7x4wy8t256k4szsw9vqsk
           token: ${{ secrets.TOKEN }}
           config: config/eip-editors.yml
           pr_number: ${{ steps.save-pr-number.outputs.pr }}
